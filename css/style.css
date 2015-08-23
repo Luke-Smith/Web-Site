@@ -1,10 +1,14 @@
 html {
-  background: #505D6E url(https://41.media.tumblr.com/594f01fa0c3e20df0bfb46f41b0d4b77/tumblr_nt83oybAYq1ud7rr3o1_1280.jpg) no-repeat center center fixed;
+  background: url(img/background_img.jpg) no-repeat center center fixed;
   min-height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.bg-overlay {
+  background: rgba(255, 165, 0, 0.2);
 }
 
 body {
@@ -151,9 +155,10 @@ a:active {
 }
 
 .lead {
-  font-weight: normal;
-  font-size: 1.5em;
+  font-weight: bold;
+  font-size: 2.5em;
   line-height: 1.2em;
+  color: #000;
 }
 
 .title,
@@ -186,6 +191,21 @@ a:active {
   }
 }
 
+#about {
+  margin-top: 50px;
+}
+
+#about h2 {
+  font-size: 5em;
+}
+
+.frame{
+  width:500px;
+  height:500px;
+  border: 5px solid #000;
+  background: rgba(255, 255, 255, 0.4);
+}
+
 /* UI - Buttons */
 
 .btn {
@@ -214,7 +234,7 @@ a:active {
 .btn-link:hover,
 .btn-link:focus,
 .btn-link:active {
-  color: #fff
+  color: #fff;
 }
 
 .btn-default {
@@ -248,6 +268,12 @@ a:active {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+}
+
+.thumbnail > img {
+  width: 350px;
+  height:350px;
+  overflow: hidden;
 }
 
 .thumbnail .caption {
@@ -309,7 +335,7 @@ a:active {
 }
 
 .theme-invert .btn {
-  color: rgba(255, 255, 255, .8);
+  color: rgba(0, 0, 0, .8);
 }
 
 .theme-invert .btn:hover {
@@ -317,32 +343,48 @@ a:active {
 }
 
 .theme-invert .btn-link {
-  color: rgba(0, 0, 0, .8);
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
 }
 
 .theme-invert .btn-link:hover,
 .theme-invert .btn-link:focus,
 .theme-invert .btn-link:active {
-  color: #000
+  background: rgba(0,0,0, 0.8);
+  color: #fff;
 }
 
 .theme-invert .navbar-toggle {
-  background: rgba(0, 0, 0, 0.12);
+  width: 60px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.theme-invert .navbar-toggle:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .theme-invert .navbar-toggle .icon-bar {
+  width: 40px;
   background: #333;
+}
+.theme-invert .navbar-toggle .icon-bar:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.theme-invert .mainmenu .dropdown-menu .active {
+  background: rgba(0,0,0, 0.2);
+  color: #fff;
 }
 
 .theme-invert .mainmenu .dropdown-menu a {
+  background: rgba(255, 255, 255, .5);
   color: #000;
 }
 
 .theme-invert .mainmenu .dropdown-menu a:hover {
-  background: rgba(0, 0, 0, .1);
-  color: #000;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
 }
-
 .theme-invert .title,
 .theme-invert .subtitle,
 .theme-invert .tagline {
@@ -350,14 +392,15 @@ a:active {
 }
 
 .theme-invert .btn-default {
-  background: rgba(0, 0, 0, .4);
+   background: rgba(255, 255, 255, .5);
+  color: #000;
 }
 
 .theme-invert .btn-default:hover,
 .theme-invert .btn-default:focus,
 .theme-invert .btn-default:active,
 .theme-invert .btn-default.active {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .7);
   color: #fff;
 }
 
@@ -374,9 +417,9 @@ a:active {
 }
 
 .theme-invert .thumbnail {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .thumbnail .caption {
-  color: inherit;
+  color: #000;
 }

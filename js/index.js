@@ -1,13 +1,13 @@
+
 // global. currently active menu item 
 var current_item = 0;
 
-// few settings
-var section_hide_time = 1300;
-var section_show_time = 1300;
+// show content settings
+var section_hide_time = 500;
+var section_show_time = 500;
 
 // jQuery stuff
 jQuery(document).ready(function($) {
-
 	// Switch section
 	$("a", '.mainmenu').click(function() 
 	{
@@ -24,3 +24,53 @@ jQuery(document).ready(function($) {
 		return false;
 	});		
 });
+
+
+//Gets Tooltipsters on My Music Section
+
+$(document).ready(function() {
+$('.tooltip-song1').tooltipster({
+    content: $('<iframe width="520" height="415" src="https://www.youtube.com/embed/xWcN229VAXA?autoplay=1" frameborder="0" allowfullscreen></iframe>'),
+    
+    animation	     : 'grow',
+    fixedWidth	   : 400,
+    position	     : 'bottom',
+    theme		       : 'tooltipster-light',
+    interactive    : true,
+    offsetX        : 150,
+   });
+   
+   $('.tooltip-song2').tooltipster({
+    content: $('<iframe width="520" height="415" src="https://www.youtube.com/embed/jEor0qgdjD0?autoplay=1" frameborder="0" allowfullscreen></iframe>'),
+    
+    animation	     : 'grow',
+    fixedWidth	   : 400,
+    position	     : 'bottom',
+    theme		       : 'tooltipster-light',
+    interactive    : true,
+    offsetX        : 150,
+   });
+  
+  
+  $('.tooltip-song3').tooltipster({
+    content: $('<iframe width="520" height="415" src="https://www.youtube.com/embed/jEor0qgdjD0?autoplay=1" frameborder="0" allowfullscreen></iframe>'),
+    
+    animation	     : 'grow',
+    fixedWidth	   : 400,
+    position	     : 'bottom',
+    theme		       : 'tooltipster-light',
+    interactive    : true,
+    offsetX        : 150,
+   });
+  
+  $('.tooltip-song4').tooltipster({
+    content: $('<iframe width="520" height="415" src="https://www.youtube.com/embed/6Tak68-JGbU?autoplay=1" frameborder="0" allowfullscreen></iframe>'),
+    
+    animation	     : 'grow',
+    fixedWidth	   : 400,
+    position	     : 'bottom',
+    theme		       : 'tooltipster-light',
+    interactive    : true,
+    offsetX        : 150,
+   });
+  });
